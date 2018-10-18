@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_shake"
+    android:orientation="vertical"
+    tools:context="com.sinfeeloo.openmapdemo.com.sinfeeloo.amap.ShakeActivity">
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/RL_Finaly_shake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="281dp"
+            android:layout_height="113dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="124dp"
+            android:background="@drawable/board_shake"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/ll_shake_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/male" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="李白"
+                    android:textColor="#212121"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_shake_user"
+                android:layout_centerHorizontal="true"
+                android:text="与您相聚102公里" />
+        </RelativeLayout>
+
+        <com.seth.amap.XCRoundImageView
+            android:id="@+id/roundImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/weichat_icon" />
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="93dp"-->
+        <!--android:src="@mipmap/weichat_icon" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RL_begin_shake"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/iv_arrow_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_arrow_right"
+            android:layout_marginStart="116dp"
+            android:src="@mipmap/arrow_left_shake" />
+
+        <ImageView
+            android:id="@+id/iv_arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="116dp"
+            android:layout_marginTop="106dp"
+            android:src="@mipmap/arrow_right_shake" />
+
+        <ImageView
+            android:layout_width="127dp"
+            android:layout_height="121dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="114dp"
+            android:src="@drawable/phone_shake" />
+
+        <ImageView
+            android:layout_width="67dp"
+            android:layout_height="23dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="228dp"
+            android:src="@drawable/text_shake" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RL_middle_shake"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--摇一摇中心图片-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/logo_shake" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!--顶部的横线和图片-->
+            <LinearLayout
+                android:id="@+id/main_linear_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/main_shake_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/shake_top" />
+
+                <ImageView
+                    android:id="@+id/main_shake_top_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@mipmap/shake_top_line" />
+            </LinearLayout>
+
+            <!--底部的横线和图片-->
+            <LinearLayout
+                android:id="@+id/main_linear_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/main_shake_bottom_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@mipmap/shake_bottom_line" />
+
+                <ImageView
+                    android:id="@+id/main_shake_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/shake_bottom" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

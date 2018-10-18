@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pickup_background"
+    android:id="@+id/pick_up_layout"
+     >
+
+    <ImageView
+        android:id="@+id/bottle_picked_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:src="@drawable/bottle_close_frame_normal"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/bottle_picked_voice_msg"
+        android:layout_width="59dp"
+        android:layout_height="58dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="286dp"
+        android:src="@drawable/newbottle"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/pick_spray1"
+        android:layout_width="42.5dp"
+        android:layout_height="32.5dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="140dp"
+        android:src="@drawable/bottle_spray1"
+        android:visibility="gone" />
+    <!--spray-->
+    <ImageView
+        android:id="@+id/pick_spray2"
+        android:layout_width="42.5dp"
+        android:layout_height="32.5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="143dp"
+        android:src="@drawable/bottle_spray1"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

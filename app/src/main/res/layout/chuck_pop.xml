@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+	<RelativeLayout
+		android:id="@+id/chuck_layout1"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentTop="true">
+
+		<EditText
+			android:id="@+id/chuck_edit"
+			android:paddingTop="30dp"
+			android:paddingLeft="20dp"
+			android:paddingRight="20dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp"
+			android:layout_width="wrap_content"
+			android:layout_height="350dp"
+			android:layout_marginTop="50dp"
+			android:textColor="#FF212121"
+			android:background="@drawable/paper"
+			android:gravity="top"
+			android:visibility="gone" />
+
+		<ImageView
+			android:id="@+id/chuck_bottle1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:src="@drawable/bottle_type_text"
+			android:visibility="gone" />
+
+		<RelativeLayout
+			android:id="@+id/chuck_layout"
+			android:layout_width="fill_parent"
+			android:layout_height="55dip"
+			android:layout_alignParentBottom="true"
+			android:background="@drawable/webviewtab_bg">
+
+			<Button
+				android:id="@+id/chuck_keyboard"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="2.5dip"
+				android:background="@drawable/chat_bottom_keyboard"
+				android:visibility="visible" />
+
+			<Button
+				android:id="@+id/chuck_speak"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="5dip"
+				android:layout_toRightOf="@+id/chuck_keyboard"
+				android:background="@drawable/chat_speak"
+				android:text="按住说话"
+				android:textColor="#fff"
+				android:textSize="20sp"
+				android:visibility="visible" />
+
+		</RelativeLayout>
+
+		<ImageView
+			android:id="@+id/chuck_toast"
+			android:layout_width="245dp"
+			android:layout_height="88dp"
+			android:layout_above="@+id/chuck_layout"
+			android:layout_alignParentEnd="true"
+			android:src="@drawable/tips_press_talk"
+			android:visibility="visible" />
+
+	</RelativeLayout>
+    
+    
+</RelativeLayout>

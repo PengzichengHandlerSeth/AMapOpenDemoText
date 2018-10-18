@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">OpenMapDemo</string>
+    <string name="kewword">关键字搜索</string>
+    <!-- 朋友们 -->
+    <string name="friend_circle">朋友圈</string>
+    <string name="friend_add">添加朋友</string>
+    <string name="friend_nearby">附近的人</string>
+    <string name="friend_shake">摇一摇</string>
+    <string name="friend_drift">漂流瓶</string>
+    <string name="friend_findNumber">搜号码</string>
+    <string name="friend_sweep">扫一扫</string>
+    <string name="friend_fromAdd">从好友列表添加</string>
+    <string name="friend_fromcontactAdd">从手机通讯录添加</string>
+    <string name="friend_public">查找微信公众账号</string>
+    <string name="friend_discard_bottle">扔一个</string>
+    <string name="friend_collect_bottle">捡一个</string>
+    <string name="friend_my_bottle">我的瓶子</string>
+    <string name="friend_back">返回</string>
+    <string name="friend_search_titlename">按号码查找</string>
+    <string name="friend_search_titlename1">微信号/QQ号/手机号/公众账号</string>
+    <string name="friend_search_titlename2">不知道加谁？去邀请朋友</string>
+    <string name="nothing" />
+    <string name="download_confirm_msg">检测到您尚未安装语音组件，是否现在下载？</string>
+    <string name="dialog_confirm_button">确定</string>
+    <string name="dialog_cancel_button">取消</string>
+</resources>
